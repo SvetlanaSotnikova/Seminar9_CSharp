@@ -6,19 +6,19 @@ string WriteArr(int num, string result)
 {
     if (num == 1)
     {
-        result = result + " " + '1';
+        result = result + '1';
         return result;
     }
     else
     {
-        result = result + " " + num;
+        result = result + num + ", ";
         return WriteArr(num - 1, result);
     }
 }
 string result = "";
 Console.Write("input the number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.Write($"N = {num} -> {WriteArr(num, result)}");
+Console.Write($"N = {num} -> \"{WriteArr(num, result)}\"");
 */
 
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
